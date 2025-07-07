@@ -21,7 +21,7 @@ public class EmailService {
         MimeMessageHelper helper = new MimeMessageHelper(message);
 
         try {
-            helper.setFrom("rameshvaddemancourses@gmail.com");  // Sender's email
+            helper.setFrom();  // Sender's email
             helper.setTo(to);  // Recipient's email
             helper.setSubject(subject);  // Email subject
             helper.setText(text);  // Email body content
